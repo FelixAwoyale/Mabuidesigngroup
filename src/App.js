@@ -1,12 +1,20 @@
 import "./App.css";
-import MDG from "./Assets/mdg.gif";
+import MDG from "./Assets/unnamed.gif";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={MDG} alt="Mabui Design Group" width="70%" />
-        {/* <p>Coming Soon</p> */}
+      <header
+        className="App-header"
+        style={{
+          backgroundImage: `url("${MDG}")`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
+        {/* <img src={MDG} alt="Mabui Design Group" width="70%" />
+        <p>Coming Soon</p> */}
+        <br />
         <div className="button">
           {" "}
           <p>
